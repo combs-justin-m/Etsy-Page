@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/**************
+Variables
+**************/
+/**************
+General
+**************/
+body {
+  background: #F5F5F1; }
+
+main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  height: 500px; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.button {
+  width: 80px;
+  height: 35px;
+  background: transparent;
+  margin-left: 20px; }
+
+/**************
+Header
+**************/
+header {
+  height: 80px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0.1px 3px #555555; }
+
+nav {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.searchbar {
+  float: left; }
+
+.logo {
+  color: #F45800;
+  font-size: 38px;
+  font-family: Arial;
+  float: left;
+  padding-top: 15px;
+  margin-right: 10px; }
+
+header nav input {
+  margin-top: 22px;
+  width: 260px;
+  height: 35px; }
+
+.loginWrapper {
+  float: right;
+  margin-top: 20px; }
+
+/**************
+Aside
+**************/
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background: #FFFFFF;
+  height: 100%;
+  border: 1px solid #B2B2B2; }
+  aside:last-child {
+    margin-right: 0; }
+
+/**************
+Content
+**************/
+section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  height: 100%; }
+  section:last-child {
+    margin-right: 0; }
+
+ul {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0; }
+  ul::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 220px;
+  background: #FFFFFF;
+  margin: 0 5px 10px;
+  border: 1px solid #B2B2B2;
+  font-size: 16px; }
+  li:last-child {
+    margin-right: 0; }
+
+.contentImg {
+  height: 175px;
+  background: #F5F5F1; }
+
+.contentDisc {
+  height: 45px; }
+
+/**************
+Result
+**************/
+.contentImg {
+  height: 175px;
+  background: #F5F5F1; }
+
+.contentDisc {
+  height: 45px; }
+
+.user {
+  float: left; }
+
+.price {
+  float: right; }
+
+/**************
+Footer
+**************/

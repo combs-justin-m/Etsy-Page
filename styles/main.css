@@ -62,11 +62,29 @@ nav::after {
 
 .logo {
   color: #F45800;
-  font-size: 42px;
-  font-family: 'Gentium Book Basic', serif;
+  font-size: 40px;
+  font-family: 'Lora', serif;
   float: left;
   padding-top: 15px;
   margin-right: 20px; }
+
+.searchText {
+  font-size: 14px;
+  box-shadow: inset 0 0 2px #EEEEEE;
+  background: #FBFBFA;
+  border: 1px solid #B2B2B2;
+  margin-top: 22px;
+  padding-left: 8px;
+  width: 260px;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.searchText:focus {
+  outline: none;
+  box-shadow: none;
+  background: #FFFFFF;
+  border: 1px solid #1692B3; }
 
 #search {
   position: relative;
@@ -107,24 +125,6 @@ nav::after {
 
 #cart img {
   height: 22px; }
-
-.searchText {
-  font-size: 14px;
-  box-shadow: inset 0 0 2px #EEEEEE;
-  background: #FBFBFA;
-  border: 1px solid #B2B2B2;
-  margin-top: 22px;
-  padding-left: 8px;
-  width: 260px;
-  height: 35px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; }
-
-.searchText:focus {
-  outline: none;
-  box-shadow: none;
-  background: #FFFFFF;
-  border: 1px solid #1692B3; }
 
 .loginWrapper {
   float: right;

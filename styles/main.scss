@@ -64,11 +64,31 @@ nav {
 
 .logo {
   color: $orange;
-  font-size: 42px;
-  font-family: 'Gentium Book Basic', serif;
+  font-size: 40px;
+  font-family: 'Lora', serif;
   float: left;
   padding-top: 15px;
   margin-right: 20px;
+}
+
+.searchText {
+  font-size: 14px;
+  box-shadow: inset 0 0 2px $lightgray;
+  background: $lighttan;
+  border: 1px solid $gray;
+  margin-top: 22px;
+  padding-left: 8px;
+  width: 260px;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.searchText:focus {
+  outline: none;
+  box-shadow: none;
+  background: $white;
+  border: 1px solid $darkblue;
 }
 
 #search {
@@ -117,25 +137,6 @@ nav {
   }
 }
 
-.searchText {
-  font-size: 14px;
-  box-shadow: inset 0 0 2px $lightgray;
-  background: $lighttan;
-  border: 1px solid $gray;
-  margin-top: 22px;
-  padding-left: 8px;
-  width: 260px;
-  height: 35px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.searchText:focus {
-  outline: none;
-  box-shadow: none;
-  background: $white;
-  border: 1px solid $darkblue;
-}
 
 .loginWrapper {
   float: right;

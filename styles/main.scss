@@ -181,12 +181,12 @@ li {
   font-size: 16px;
   margin-bottom: 20px;
   width: 255px;
-  height: 240px;
+  height: 245px;
   font-size: 13px;
 
   img {
     height: 190px;
-    width: 255px;
+    width: 100%;
   }
 }
 
@@ -196,7 +196,7 @@ Result
 **************/
 
 .contentImg {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .title {
@@ -208,10 +208,12 @@ Result
 
 .user {
   float: left;
+  color: $gray;
 }
 
 .price {
   float: right;
+  color: $green;
 }
 
 /**************

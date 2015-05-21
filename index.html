@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whisky on Etsy</title>
-  <link rel="stylesheet" href="styles/vendor/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700|Gentium+Book+Basic' rel='stylesheet' type='text/css'>  <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -13,14 +13,17 @@
     <nav>
       <div class="logo">Etsy</div>
       <form class="searchbar">
-        <input type="text" placeholder="Search for items or shops">
-        <input type="submit" value="Search" class="button">
+        <input type="text" placeholder=" Search for items or shops">
+        <input type="submit" value="Search" class="button" id="search">
         <input type="submit" value="Browse" class="button" id="browse">
       </form>
       <div class="loginWrapper">
-        <button class="button">Register</button>
-        <button class="button">Sign In</button>
-        <button class="button">Cart</button>
+        <button class="button" id="register">Register</button>
+        <button class="button" id="signIn">Sign In</button>
+        <button id="cart">
+          <img src="images/cart.png" alt="">
+          <span>Cart</span>
+        </button>
       </div>
     </nav>
   </header>
@@ -108,6 +111,7 @@
     </section>
   </main>
 
+<script src="scripts/items.js"></script>
 <script src="scripts/vendor/jquery.min.js"></script>
 <script src="scripts/main.js"></script>
 </body>

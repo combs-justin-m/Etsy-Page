@@ -13,7 +13,8 @@ Variables
 General
 **************/
 body {
-  background: #F5F5F1; }
+  background: #F5F5F1;
+  font-family: 'Roboto', sans-serif; }
 
 main {
   max-width: 68em;
@@ -21,16 +22,21 @@ main {
   margin-right: auto;
   margin-top: 60px;
   height: 500px; }
-  main::after {
-    clear: both;
-    content: "";
-    display: table; }
+
+main::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 .button {
   width: 80px;
   height: 35px;
   background: transparent;
-  margin-left: 20px; }
+  margin-left: 20px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: none; }
 
 /**************
 Header
@@ -45,26 +51,72 @@ nav {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  nav::after {
-    clear: both;
-    content: "";
-    display: table; }
+
+nav::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 .searchbar {
   float: left; }
 
 .logo {
   color: #F45800;
-  font-size: 38px;
-  font-family: Arial;
+  font-size: 42px;
+  font-family: 'Gentium Book Basic', serif;
   float: left;
   padding-top: 15px;
-  margin-right: 10px; }
+  margin-right: 20px; }
+
+#search {
+  position: relative;
+  background: #39AAC5;
+  color: #FFFFFF;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+  left: -6px;
+  top: -1.5px;
+  border-left: none;
+  font-weight: 700; }
+
+#browse {
+  border: 1px solid #EEEEEE; }
+
+#register {
+  border: none;
+  color: #1692B3;
+  width: 60px; }
+
+#signIn {
+  border: 1px solid #1692B3;
+  color: #39AAC5;
+  width: 60px; }
+
+#cart {
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  padding-left: 15px;
+  margin-left: 15px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #EEEEEE;
+  font-size: 12px; }
+
+#cart img {
+  height: 22px; }
 
 header nav input {
   margin-top: 22px;
   width: 260px;
-  height: 35px; }
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0 0 2px #EEEEEE;
+  background: #FBFBFA;
+  border: 1px solid #B2B2B2; }
 
 .loginWrapper {
   float: right;
@@ -81,8 +133,9 @@ aside {
   background: #FFFFFF;
   height: 100%;
   border: 1px solid #B2B2B2; }
-  aside:last-child {
-    margin-right: 0; }
+
+aside:last-child {
+  margin-right: 0; }
 
 /**************
 Content
@@ -93,18 +146,20 @@ section {
   margin-right: 2.35765%;
   width: 74.41059%;
   height: 100%; }
-  section:last-child {
-    margin-right: 0; }
+
+section:last-child {
+  margin-right: 0; }
 
 ul {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0; }
-  ul::after {
-    clear: both;
-    content: "";
-    display: table; }
+
+ul::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 li {
   float: left;
@@ -116,8 +171,9 @@ li {
   margin: 0 5px 10px;
   border: 1px solid #B2B2B2;
   font-size: 16px; }
-  li:last-child {
-    margin-right: 0; }
+
+li:last-child {
+  margin-right: 0; }
 
 .contentImg {
   height: 175px;
@@ -130,11 +186,11 @@ li {
 Result
 **************/
 .contentImg {
-  height: 175px;
+  height: 170px;
   background: #F5F5F1; }
 
 .contentDisc {
-  height: 45px; }
+  height: 50px; }
 
 .user {
   float: left; }

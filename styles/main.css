@@ -23,15 +23,20 @@ main {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px; }
+  margin-top: 30px; }
 
 main::after {
   clear: both;
   content: "";
   display: table; }
 
+a {
+  color: #1692B3;
+  text-decoration: none; }
+
 p {
-  margin: 5px; }
+  font-size: 13px;
+  margin: 5px 7px; }
 
 .button {
   width: 80px;
@@ -142,17 +147,26 @@ aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  background: #FFFFFF;
-  height: 500px;
-  border: 1px solid #B2B2B2; }
+  width: 23.23176%; }
 
 aside:last-child {
   margin-right: 0; }
 
+dl {
+  background: #FFFFFF;
+  height: 500px;
+  border: 1px solid #B2B2B2;
+  margin: 0; }
+
 /**************
 Content
 **************/
+#resultsLine {
+  float: left; }
+
+#sortBy {
+  float: right; }
+
 section {
   float: left;
   display: block;
@@ -164,7 +178,7 @@ section:last-child {
   margin-right: 0; }
 
 ul {
-  margin-top: 0; }
+  margin: 0; }
 
 li {
   float: left;
@@ -173,11 +187,11 @@ li {
   width: 31.76157%;
   background: #FFFFFF;
   border: 1px solid #B2B2B2;
+  border-radius: 3px;
   font-size: 16px;
   margin-bottom: 20px;
   width: 255px;
-  height: 245px;
-  font-size: 13px; }
+  height: 250px; }
 
 li:last-child {
   margin-right: 0; }
@@ -190,25 +204,29 @@ li:nth-child(3n+1) {
 
 li img {
   height: 190px;
-  width: 100%; }
+  width: 100%;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px; }
 
 /**************
 Result
 **************/
-.contentImg {
+#contentImg {
   object-fit: fill; }
 
-.title {
-  width: 250px;
+#title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.user {
+#user {
   float: left;
-  color: #B2B2B2; }
+  color: #B2B2B2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
-.price {
+#price {
   float: right;
   color: #78C042; }
 

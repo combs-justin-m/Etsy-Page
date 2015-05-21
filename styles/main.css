@@ -12,6 +12,9 @@ Variables
 /**************
 General
 **************/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   background: #F5F5F1;
   font-family: 'Roboto', sans-serif; }
@@ -26,6 +29,9 @@ main::after {
   clear: both;
   content: "";
   display: table; }
+
+p {
+  margin: 5px; }
 
 .button {
   width: 80px;
@@ -69,7 +75,7 @@ nav::after {
 
 .searchText {
   font-size: 14px;
-  box-shadow: inset 0 0 2px #EEEEEE;
+  box-shadow: inset 0 0 2px #B2B2B2;
   background: #FBFBFA;
   border: 1px solid #B2B2B2;
   margin-top: 22px;
@@ -170,7 +176,8 @@ li {
   font-size: 16px;
   margin-bottom: 20px;
   width: 255px;
-  height: 240px; }
+  height: 240px;
+  font-size: 13px; }
 
 li:last-child {
   margin-right: 0; }
@@ -181,27 +188,21 @@ li:nth-child(3n) {
 li:nth-child(3n+1) {
   clear: left; }
 
-.contentImg {
+li img {
   height: 190px;
-  background: #F5F5F1; }
-
-.contentDesc {
-  height: 50px; }
+  width: 255px; }
 
 /**************
 Result
 **************/
-#content li {
-  width: 255px;
-  height: 240px; }
-
 .contentImg {
-  width: 100%;
-  background: #F5F5F1; }
+  object-fit: cover; }
 
-.contentDesc {
-  height: 50px;
-  padding: 5px; }
+.title {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .user {
   float: left; }

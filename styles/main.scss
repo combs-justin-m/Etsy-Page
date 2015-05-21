@@ -20,6 +20,10 @@ $lightgray: #EEEEEE;
 General
 **************/
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background: $tan;
   font-family: 'Roboto', sans-serif;
@@ -30,6 +34,9 @@ main {
   margin-top: 60px;
 }
 
+p {
+  margin: 5px;
+}
 
 .button {
   width: 80px;
@@ -72,7 +79,7 @@ nav {
 
 .searchText {
   font-size: 14px;
-  box-shadow: inset 0 0 2px $lightgray;
+  box-shadow: inset 0 0 2px $gray;
   background: $lighttan;
   border: 1px solid $gray;
   margin-top: 22px;
@@ -175,33 +182,28 @@ li {
   margin-bottom: 20px;
   width: 255px;
   height: 240px;
+  font-size: 13px;
+
+  img {
+    height: 190px;
+    width: 255px;
+  }
 }
 
-.contentImg {
-  height: 190px;
-  background: $tan;
-}
-
-.contentDesc {
-  height: 50px;
-}
 
 /**************
 Result
 **************/
-#content li {
-  width: 255px;
-  height: 240px;
-}
 
 .contentImg {
-  width: 100%;
-  background: $tan;
+  object-fit: cover;
 }
 
-.contentDesc {
-  height: 50px;
-  padding: 5px;
+.title {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .user {

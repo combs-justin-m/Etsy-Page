@@ -78,6 +78,7 @@ nav::after {
   left: -6px;
   top: -1.5px;
   border-left: none;
+  font-size: 16px;
   font-weight: 700; }
 
 #browse {
@@ -90,7 +91,7 @@ nav::after {
 
 #signIn {
   border: 1px solid #1692B3;
-  color: #39AAC5;
+  color: #1692B3;
   width: 60px; }
 
 #cart {
@@ -176,11 +177,11 @@ li:last-child {
   margin-right: 0; }
 
 .contentImg {
-  height: 175px;
+  height: 170px;
   background: #F5F5F1; }
 
-.contentDisc {
-  height: 45px; }
+.contentDesc {
+  height: 50px; }
 
 /**************
 Result
@@ -189,8 +190,9 @@ Result
   height: 170px;
   background: #F5F5F1; }
 
-.contentDisc {
-  height: 50px; }
+.contentDesc {
+  height: 50px;
+  padding: 5px; }
 
 .user {
   float: left; }

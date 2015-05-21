@@ -81,6 +81,7 @@ nav {
   left: -6px;
   top: -1.5px;
   border-left: none;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -96,7 +97,7 @@ nav {
 
 #signIn {
   border: 1px solid $darkblue;
-  color: $blue;
+  color: $darkblue;
   width: 60px;
 }
 
@@ -168,12 +169,12 @@ li {
 }
 
 .contentImg {
-  height: 175px;
+  height: 170px;
   background: $tan;
 }
 
-.contentDisc {
-  height: 45px;
+.contentDesc {
+  height: 50px;
 }
 
 /**************
@@ -185,8 +186,9 @@ Result
   background: $tan;
 }
 
-.contentDisc {
+.contentDesc {
   height: 50px;
+  padding: 5px;
 }
 
 .user {

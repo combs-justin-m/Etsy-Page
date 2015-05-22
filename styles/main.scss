@@ -212,6 +212,7 @@ ul {
 li {
   @include span-columns(4);
   @include omega(3n);
+  position: relative;
   background: $white;
   border: 1px solid $lightgray;
   border-radius: 3px;
@@ -221,7 +222,6 @@ li {
   height: 250px;
 
   img {
-    position: relative;
     height: 190px;
     width: 100%;
     border-top-left-radius: 2px;
@@ -229,6 +229,34 @@ li {
   }
 }
 
+.socialRow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2px;
+}
+
+.socialBtn {
+  background-color: $white;
+  border: 1px solid $gray;
+  margin: 5px 2px 0;
+  padding: 4px;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px
+}
+
+.socialFav {
+  background-image: url(../images/heart.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+
+}
+
+.socialHam {
+
+}
 
 /**************
 Result

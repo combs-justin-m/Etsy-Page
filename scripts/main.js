@@ -1,6 +1,6 @@
 // Content - API appender //
 var $content = $('#content')
-var contentImg, title, user, price, fullItem;
+var contentImg, title, user, price, fullItem, social;
 
 items.results.forEach( function (item){
   contentImg =  '<img id="contentImg" src="' + item.Images[0].url_170x135 + '">';
@@ -10,7 +10,9 @@ items.results.forEach( function (item){
   user = '<a href="' + shopLink + '">' + '<p id="user">' + item.Shop.shop_name + '</p>' + '</a>';
   price = '<p id="price">' + '$' + item.price + ' ' + item.currency_code + '</p>';
 
-  fullItem = '<li>'  + contentImg + title + user + price + '</li>';
+  social = '<div class="socialRow">' + '<button class="socialBtn">' + '<div class="socialFav">' + '</div>' + '</button>' + '<button class="socialBtn">' + '<div class="socialHam">' + '</div>' + '</button>' + '</div>';
+
+  fullItem = '<li>'  + contentImg + title + user + price + social + '</li>';
   $content.append(fullItem);
 });
 

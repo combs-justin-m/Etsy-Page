@@ -24,4 +24,8 @@ $('#resultsLine').append('"' + '<b>' + searchTerm + '</b>' + '"' + ' ' + '(' + r
 $('dt').on('click', function (){
   $('dt').removeClass('active');
   $(this).addClass('active');
+  $('#resultsCat').html($(this).html()); // category updater
 });
+
+
+

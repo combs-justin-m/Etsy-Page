@@ -172,6 +172,10 @@ dt {
 /**************
 Content
 **************/
+#resultsCat {
+  float: left;
+  margin-right: 0; }
+
 #resultsLine {
   float: left; }
 

@@ -218,6 +218,9 @@ li:nth-child(3n) {
 li:nth-child(3n+1) {
   clear: left; }
 
+li:hover .socialBtn {
+  opacity: 1; }
+
 li img {
   height: 190px;
   width: 100%;
@@ -237,10 +240,18 @@ li img {
   padding: 4px;
   height: 25px;
   width: 25px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.2s ease; }
 
 .socialFav {
   background-image: url(../images/heart.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px; }
+
+.socialHam {
+  background-image: url(../images/hamburger.png);
   background-size: cover;
   height: 15px;
   width: 15px; }

@@ -221,6 +221,10 @@ li {
   width: 255px;
   height: 250px;
 
+  &:hover .socialBtn {
+    opacity: 1;
+  }
+
   img {
     height: 190px;
     width: 100%;
@@ -243,7 +247,9 @@ li {
   padding: 4px;
   height: 25px;
   width: 25px;
-  border-radius: 3px
+  border-radius: 3px;
+  opacity: 0;
+  transition: all .2s ease;
 }
 
 .socialFav {
@@ -251,11 +257,13 @@ li {
   background-size: cover;
   height: 15px;
   width: 15px;
-
 }
 
 .socialHam {
-
+  background-image: url(../images/hamburger.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
 }
 
 /**************

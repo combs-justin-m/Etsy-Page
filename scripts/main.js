@@ -19,3 +19,9 @@ var resultsNum = items.count;
 
 $('#resultsLine').append('"' + '<b>' + searchTerm + '</b>' + '"' + ' ' + '(' + resultsNum + ' Results)');
 
+// aside active assigner //
+
+$('dt').on('click', function (){
+  $('dt').removeClass('active');
+  $(this).addClass('active');
+});

@@ -218,6 +218,7 @@ li:nth-child(3n+1) {
   clear: left; }
 
 li img {
+  position: relative;
   height: 190px;
   width: 100%;
   border-top-left-radius: 2px;
@@ -230,9 +231,13 @@ Result
   object-fit: fill; }
 
 #title {
+  color: #555555;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+#title:hover {
+  text-decoration: underline; }
 
 #user {
   float: left;
@@ -240,6 +245,9 @@ Result
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+#user:hover {
+  text-decoration: underline; }
 
 #price {
   float: right;

@@ -221,6 +221,7 @@ li {
   height: 250px;
 
   img {
+    position: relative;
     height: 190px;
     width: 100%;
     border-top-left-radius: 2px;
@@ -238,9 +239,14 @@ Result
 }
 
 #title {
+  color: $black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #user {
@@ -249,6 +255,10 @@ Result
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #price {

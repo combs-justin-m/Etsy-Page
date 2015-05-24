@@ -244,6 +244,9 @@ li img {
   opacity: 0;
   transition: all 0.2s ease; }
 
+.socialBtn:hover {
+  box-shadow: 0px 1px 2px #555555; }
+
 .socialFav {
   background-image: url(../images/heart.png);
   background-size: cover;

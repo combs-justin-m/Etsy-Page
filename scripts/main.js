@@ -2,9 +2,9 @@
 var $content = $('#content')
 var contentImg, title, user, price, fullItem, social;
 
-items.results.forEach( function (item){
-  contentImg =  '<img id="contentImg" src="' + item.Images[0].url_170x135 + '">';
+function populate(tax) { items.results.forEach(function (item){
   titleLink = item.url;
+  contentImg =  '<a href="' + titleLink + '">' + '<img id="contentImg" src="' + item.Images[0].url_170x135 + '">' + '</a>';
   title = '<a href="' + titleLink + '">' + '<p id="title">' + item.title + '</p>' + '</a>';
   shopLink = item.Shop.url;
   user = '<a href="' + shopLink + '">' + '<p id="user">' + item.Shop.shop_name + '</p>' + '</a>';
@@ -12,8 +12,12 @@ items.results.forEach( function (item){
   social = '<div class="socialRow">' + '<button class="socialBtn">' + '<div class="socialFav">' + '</div>' + '</button>' + '<button class="socialBtn">' + '<div class="socialHam">' + '</div>' + '</button>' + '</div>';
 
   fullItem = '<li>'  + contentImg + title + user + price + social + '</li>';
+
   $content.append(fullItem);
-});
+  });
+}
+
+populate();
 
 // Search param and results counter //
 
@@ -28,5 +32,7 @@ $('dt').on('click', function (){
   $('dt').removeClass('active');
   $(this).addClass('active');
   $('#resultsCat').html($(this).html()); // category updater
+
+
 });
 

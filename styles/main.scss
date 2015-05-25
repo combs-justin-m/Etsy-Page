@@ -37,6 +37,10 @@ main {
 a {
   color: $darkblue;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 p {
@@ -171,16 +175,125 @@ aside {
 
 dl {
   background: $white;
-  height: 450px;
+  min-height: 450px;
   border: 1px solid $lightgray;
   border-radius: 3px;
-  margin: 0;
+  margin: 10px 0 25px 0;
   padding: 20px 0 20px 30px;
 }
 
 dt {
   padding-bottom: 10px;
   font-size: 14px;
+}
+
+/**************
+Refine section
+**************/
+
+.refine {
+  @extend dl;
+  padding: 0 10px;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.rad {
+  margin-left: 8px;
+  margin-bottom: 15px;
+
+  a {
+    margin-left: 10px;
+  }
+}
+
+.refsec {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $lightgray;
+}
+
+.pricer {
+
+ input {
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+  margin: 10px 0;
+  padding-left: 10px;
+  border: 1px solid $lightgray;
+  border-radius: 3px;
+ }
+}
+
+.highlow:focus {
+  outline: none;
+  box-shadow: none;
+  background: $white;
+  border: 1px solid $darkblue;
+}
+
+.priceTo {
+  display: inline-block;
+  font-size: 14px;
+  margin: 8px;
+}
+
+#rightArrow {
+  padding: 0;
+  width: 40px;
+  background-color: $white;
+
+  &:hover {
+    background-color: $tan;
+  }
+}
+
+.filtRed {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin: 10px 1px;
+  border: 1px solid $lightgray;
+  border-radius: 3px;
+  background-color: red;
+}
+
+.filtOrange {
+  @extend .filtRed;
+  background-color: orange;
+}
+
+.filtYellow {
+  @extend .filtRed;
+  background-color: yellow;
+}
+
+.filtGreen {
+  @extend .filtRed;
+  background-color: green;
+}
+
+.filtBlue {
+  @extend .filtRed;
+  background-color: blue;
+}
+
+.filtPurple {
+  @extend .filtRed;
+  background-color: purple;
+}
+
+.filtBlack {
+  @extend .filtRed;
+  background-color: black;
+}
+
+.filtWhite {
+  @extend .filtRed;
+  background-color: white;
 }
 
 /**************
@@ -217,6 +330,7 @@ li {
   border: 1px solid $lightgray;
   border-radius: 3px;
   font-size: 16px;
+  margin-top: 10px;
   margin-bottom: 20px;
   width: 255px;
   height: 250px;
@@ -283,10 +397,6 @@ Result
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 #user {

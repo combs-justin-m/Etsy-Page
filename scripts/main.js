@@ -12,6 +12,13 @@ function populate(tax) { items.results.forEach(function (item){
   social = '<div class="socialRow">' + '<button class="socialBtn">' + '<div class="socialFav">' + '</div>' + '</button>' + '<button class="socialBtn">' + '<div class="socialHam">' + '</div>' + '</button>' + '</div>';
 
   fullItem = '<li>'  + contentImg + title + user + price + social + '</li>';
+  // function() {
+  //   if () {
+
+  //   } else {
+
+  //   }
+  // };
 
   $content.append(fullItem);
   });

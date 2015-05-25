@@ -30,7 +30,7 @@
 
   <main>
     <aside>
-      <p>Show results for:</p>
+      <p><b>Show results for:</b></p>
       <dl>
         <a href="#"><dt class="active">All Categories</dt></a>
         <a href="#"><dt data-taxonomy="Home & Living">Home & Living</dt></a>
@@ -49,6 +49,47 @@
         <a href="#"><dt data-taxonomy="Toys & Games">Toys & Games</dt></a>
         <a href="#"><dt data-taxonomy="Pet Supplies">Pet Supplies</dt></a>
       </dl>
+      <p><b>Refine your search</b></p>
+
+      <div class="refine">
+        <div class="refsec">
+          <p><b>Item Type</b></p>
+          <label class="rad">
+            <input type="radio" name="itemType" class="radio" value="All Items" checked="checked"></input>
+            <a href="#">All Items</a>
+          </label>
+          <br>
+          <label class="rad">
+            <input type="radio" name="itemType" class="radio" value="Handmade"></input>
+            <a href="#">Handmade</a>
+          </label>
+          <br>
+          <label class="rad">
+            <input type="radio" name="itemType" class="radio" value="Vintage"></input>
+            <a href="#">Vintage</a>
+          </label>
+        </div>
+      <div class="refsec">
+        <p><b>Price</b></p>
+        <div class="pricer">
+          <input type="text" placeholder="High" class="highlow">
+          <span class="priceTo">to</span>
+          <input type="text" placeholder="Low" class="highlow">
+          <input type="submit" value="▹" id="rightArrow">
+        </div>
+      </div>
+      <div class="refsec">
+        <p><b>Filter by color</b></p>
+        <div class="filtRed"></div>
+        <div class="filtOrange"></div>
+        <div class="filtYellow"></div>
+        <div class="filtGreen"></div>
+        <div class="filtBlue"></div>
+        <div class="filtPurple"></div>
+        <div class="filtBlack"></div>
+        <div class="filtWhite"></div>
+      </div>
+      </div>
 
     </aside>
 

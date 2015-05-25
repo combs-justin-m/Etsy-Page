@@ -182,16 +182,20 @@ Refine section
   font-size: 14px; }
 
 .rad {
-  margin-left: 8px;
-  margin-bottom: 15px; }
+  margin-left: 8px; }
 
 .rad a {
   margin-left: 10px; }
 
+.rad input {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 .refsec {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #E1E3DF; }
+  border-bottom: 1px solid #E1E3DF;
+  font-size: 14px; }
 
 .pricer input {
   display: inline-block;
@@ -250,6 +254,15 @@ Refine section
 
 .filtWhite {
   background-color: white; }
+
+.ordering input {
+  margin-top: 10px; }
+
+.customSelect {
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #E1E3DF; }
 
 /**************
 Content

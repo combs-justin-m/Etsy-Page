@@ -202,10 +202,14 @@ Refine section
 
 .rad {
   margin-left: 8px;
-  margin-bottom: 15px;
 
   a {
     margin-left: 10px;
+  }
+
+  input {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -213,6 +217,7 @@ Refine section
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid $lightgray;
+  font-size: 14px;
 }
 
 .pricer {
@@ -294,6 +299,20 @@ Refine section
 .filtWhite {
   @extend .filtRed;
   background-color: white;
+}
+
+.ordering {
+
+  input {
+    margin-top: 10px;
+  }
+}
+
+.customSelect {
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid $lightgray;
 }
 
 /**************

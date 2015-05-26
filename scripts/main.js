@@ -25,8 +25,6 @@ function populate(itemlist) {
 
 populate(items.results);
 
-
-
 // aside active assigner //
 
 $('dt').on('click', function (){
@@ -50,4 +48,3 @@ $('dt').on('click', function (){
   populate(taxlist);
   $('#resultsCat').html($(this).html());
 });
-

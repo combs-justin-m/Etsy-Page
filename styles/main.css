@@ -264,6 +264,10 @@ Refine section
   margin: 10px 0;
   border: 1px solid #E1E3DF; }
 
+.customSelect:focus {
+  outline: none;
+  border: 1px solid #1692B3; }
+
 /**************
 Content
 **************/

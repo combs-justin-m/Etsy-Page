@@ -313,6 +313,11 @@ Refine section
   width: 100%;
   margin: 10px 0;
   border: 1px solid $lightgray;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $darkblue;
+  }
 }
 
 /**************
